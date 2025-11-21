@@ -9,7 +9,7 @@ docker build -f reports/Dockerfile -t adaptive-allocation-backtest .
 
 **Run:**
 ```bash
-docker run --rm -v "$(pwd)/reports/results:/app/reports/results" adaptive-allocation-backtest
+docker run --rm -v "$(pwd)/reports:/app/reports" adaptive-allocation-backtest
 ```
 
-Results will be saved to `reports/results/backtest_results.json`
+Results will be saved to `reports/backtest_results.json`

@@ -394,9 +394,8 @@ def run_full_backtest():
     results["btc"]["trades"] = f"{len(btc_results['trades'])} trades"
     results["eth"]["trades"] = f"{len(eth_results['trades'])} trades"
 
-    # Save results to reports/results/backtest_results.json
-    results_dir = os.path.join(os.path.dirname(__file__), "results")
-    os.makedirs(results_dir, exist_ok=True)
+    # Save results to reports/backtest_results.json
+    results_dir = os.path.dirname(__file__)
     output_file = os.path.join(results_dir, "backtest_results.json")
     
     with open(output_file, "w") as f:
