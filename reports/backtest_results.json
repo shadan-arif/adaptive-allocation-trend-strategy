@@ -1,5 +1,5 @@
 {
-  "backtest_date": "2025-11-21T15:34:28.371918+00:00",
+  "backtest_date": "2025-11-21T16:18:55.011640+00:00",
   "period": "2024-01-01 to 2024-06-30",
   "strategy": "adaptive_allocation_trend",
   "btc": {
