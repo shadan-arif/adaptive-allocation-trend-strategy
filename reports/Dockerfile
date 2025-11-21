@@ -27,8 +27,5 @@ COPY reports/ /app/reports/
 # Set working directory to reports
 WORKDIR /app/reports
 
-# Create results directory
-RUN mkdir -p /app/reports/results
-
 # Run the backtest
 CMD ["python3", "backtest_runner.py"]
